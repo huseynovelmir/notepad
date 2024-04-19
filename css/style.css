@@ -5,19 +5,23 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  background-color: #ede7f6;
+  box-sizing: border-box;
+  font-family: Roboto Mono, monospace;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 .root {
   width: 100%;
-  background-color: dodgerblue;
 }
 .root .main {
-  background-color: #ede7f6;
   padding: 5px 0px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
 }
 .root .main h2 {
   margin: 20px;
@@ -26,7 +30,7 @@ body {
   color: #7e57c2;
 }
 .root .main input {
-  width: 30%;
+  width: 35%;
   padding: 10px;
   border: 1px solid rgb(126, 87, 194);
   outline-color: rgb(81, 45, 168);
@@ -34,15 +38,32 @@ body {
 }
 .root .main textarea {
   height: 135px;
-  width: 30%;
+  width: 35%;
   margin: 20px;
   padding: 10px;
   border: 1px solid rgb(126, 87, 194);
   outline-color: rgb(81, 45, 168);
   border-radius: 7px;
 }
+.root .main .colorsbtn {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+.root .main .colorsbtn button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: #7e57c2;
+  color: white;
+}
+.root .main .colorsbtn button i {
+  margin-left: 3px;
+}
 .root .main .colors {
-  width: 30%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -57,17 +78,6 @@ body {
 }
 .root .main .colors div:hover {
   margin-bottom: 5px;
-}
-.root .main .colors button {
-  padding: 10px 15px;
-  border-radius: 10px;
-  border: none;
-  background-color: #7e57c2;
-  color: white;
-  margin-left: 150px;
-}
-.root .main .colors button i {
-  margin-left: 3px;
 }
 .root .main .colors .color1 {
   background-color: #f06292;
@@ -84,10 +94,113 @@ body {
 .root .main .colors .color5 {
   background-color: #aed581;
 }
+.root .main .inputAndSvg {
+  width: 35%;
+  position: relative;
+  margin: 20px auto 5px;
+  display: flex;
+  align-items: center;
+}
+.root .main .inputAndSvg input {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+}
+.root .main .inputAndSvg svg {
+  width: 20px;
+  position: absolute;
+  right: 15px;
+}
+.root .main .cards {
+  width: 50%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.root .main .cards .card {
+  width: 300px;
+  height: 350px;
+  display: inline-block;
+  border-radius: 15px;
+  border: 2px dashed rgb(240, 98, 146);
+  margin: 20px 20px 10px;
+  overflow-y: scroll;
+}
+.root .main .cards .card h4 {
+  width: 100%;
+  margin: 0px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: rgba(240, 98, 146, 0.4);
+  text-align: left;
+  padding: 10px;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.root .main .cards .card h4 svg {
+  width: 20px;
+}
+.root .main .cards .card p {
+  padding: 10px;
+  height: 82%;
+  text-align: left;
+  margin: 0px;
+  overflow: auto;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+}
 .root footer {
   width: 100%;
   width: 100%;
   background-color: #d8b5e4;
-  padding: 5px 0px 50px;
+  padding: 50px;
   margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.root footer .links {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.root footer .links .link {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.5s;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) 0px 5px 16px 0px;
+}
+.root footer .links .link:hover {
+  box-shadow: rgba(136, 165, 191, 0.48) 16px 2px 16px 0px, rgba(255, 255, 255, 0.8) 0px 50px 80px 0px;
+}
+.root footer .links p {
+  display: block;
+  font-size: 1.4rem;
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  transition: all 0.2s ease 0s;
+  padding: 5px;
+  text-align: center;
+}
+.root footer .links p a {
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+.root footer .links p a:hover {
+  color: deeppink;
 }/*# sourceMappingURL=style.css.map */
