@@ -58,6 +58,7 @@ body {
   border: none;
   background-color: #7e57c2;
   color: white;
+  cursor: pointer;
 }
 .root .main .colorsbtn button i {
   margin-left: 3px;
@@ -68,6 +69,9 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 60px;
+}
+.root .main .colors .color {
+  cursor: pointer;
 }
 .root .main .colors div {
   width: 42px;
@@ -140,8 +144,9 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.root .main .cards .card h4 svg {
+.root .main .cards .card h4 i {
   width: 20px;
+  cursor: pointer;
 }
 .root .main .cards .card p {
   padding: 10px;
